@@ -14,15 +14,39 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInputBox().then(
 			(value) => {
 				if(value && value.match(URL_REGEX)){
-					axios.post(`${DOMAIN}/api/url/submit`, {
-						target: value,
-					})
-					.then(
-						res => {
-							const url:IUrl = res.data;
-							vscode.window.showInformationMessage(`Shorted link is ${url.shortUrl}`);
-						}
-					)
+
+
+					vscode.window.withProgress({
+						location: vscode.ProgressLocation.Notification,
+						title: "Trying to short it...",
+						cancellable: true
+					}, (progress, token) => {
+						
+						token.onCancellationRequested(() => {
+							console.log("User canceled the long running operation");
+						});
+
+						return new Promise(resolve => {
+							axios.post(`${DOMAIN}/api/url/submit`, {
+								target: value,
+							})
+							.then(
+								res => {
+									const url:IUrl = res.data;
+									resolve();
+									vscode.window.showInformationMessage(`Shorted link is ${url.shortUrl}`);
+								}
+							)
+						});
+					});
+
+
+					
+
+
+
+
+
 				}
 				else {
 					!value ?

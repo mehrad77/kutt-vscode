@@ -1,22 +1,27 @@
 {
 	"name": "kutt",
-	"displayName": "Kutt",
+	"displayName": "Kutt.it - Free & Open Source Modern URL Shortener",
 	"description": "Shorten your links in VSCode ",
+	"author": {
+        "name": "Mehrad Rousta",
+        "email": "mehrad77@gmail.com"
+	},
+	"publisher": "mehrad77",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.37.0"
+		"vscode": "^1.36.0"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.kutt"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
+			"command": "extension.kutt",
+			"title": "Kutt"
 		}]
 	},
 	"scripts": {
@@ -36,5 +41,9 @@
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.0.2"
-	}
+	},
+	"keywords": [
+        "link",
+        "link shortner"
+    ]
 }

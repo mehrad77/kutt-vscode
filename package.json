@@ -7,7 +7,7 @@
 		"email": "mehrad77@gmail.com"
 	},
 	"publisher": "mehrad77",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.36.0"
 	},

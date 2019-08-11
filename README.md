@@ -4,6 +4,8 @@ Short your links in your favorit editor, powerd by [Kutt](https://github.com/the
 
 ## How to use?
 
+Install [the extention](https://marketplace.visualstudio.com/items?itemName=mehrad.kutt).
+
 First sign up on [Kutt.it](https://kutt.it) and then go to [kutt.it/settings](https://kutt.it/settings) and genrate an API key.
 ![API in kutt.it](guid1.png)
 

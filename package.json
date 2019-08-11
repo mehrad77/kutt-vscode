@@ -24,6 +24,19 @@
 				"command": "extension.kutt",
 				"title": "Kutt"
 			}
+		],
+		"configuration": [
+			{
+				"title": "Kutt Configurations",
+				"properties": {
+					"conf.API_KEY": {
+						"type": "string",
+						"default": "",
+						"description": "API token of kutt.it",
+						"scope": "resource"
+					}
+				}
+			}
 		]
 	},
 	"scripts": {

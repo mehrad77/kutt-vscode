@@ -9,7 +9,7 @@ Install [the extention](https://marketplace.visualstudio.com/items?itemName=mehr
 First sign up on [Kutt.it](https://kutt.it) and then go to [kutt.it/settings](https://kutt.it/settings) and genrate an API key.
 ![API in kutt.it](guid1.png)
 
-then copy that and return to VSCode and run `kutt` command via `ctrl + p`. first time it would ask you for the API key. enter it.
+then copy that and return to VSCode and run `kutt` command via `ctrl + shift + p`. first time it would ask you for the API key. enter it.
 
 after that when you use `kutt` command. it'll ask you for a URL to short.
 

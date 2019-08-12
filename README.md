@@ -1,6 +1,19 @@
-# kutt for VSCode
+# Kutt for VSCode
+[![Latest Release](https://vsmarketplacebadge.apphb.com/version-short/mehrad.kutt.svg)](https://marketplace.visualstudio.com/items?itemName=mehrad.kutt)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/mehrad.kutt.svg)](https://marketplace.visualstudio.com/items?itemName=mehrad.kutt)
+[![Rating](https://vsmarketplacebadge.apphb.com/rating-short/mehrad.kutt.svg)](https://marketplace.visualstudio.com/items?itemName=mehrad.kutt#review-details)
 
 Short your links in your favorit editor, powerd by [Kutt](https://github.com/thedevs-network/kutt).
+
+## Installing
+
+Launch VS Code Quick Open (`Ctrl + P`), paste the following command, and press enter:
+
+```bash
+ext install kutt
+```
+
+Or search for `kutt` in your editor.
 
 ## How to use?
 
@@ -22,3 +35,7 @@ after that when you use `kutt` command. it'll ask you for a URL to short.
 
 ### 0.0.2
 - Initial release. It now works.
+
+
+## Contributors <3
+If you can make a contribution to this project, **that's one small step for you but one giant leap for mankind.**

@@ -12,7 +12,7 @@
         "url": "https://github.com/mehrad77/kutt-vscode.git"
     },
 	"icon":"logo.png",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
